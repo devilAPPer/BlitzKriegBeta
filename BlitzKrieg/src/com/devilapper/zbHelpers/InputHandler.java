@@ -41,9 +41,16 @@ public class InputHandler implements GestureListener {
 			} else {
 				// Do nothing.
 			}
-		} else {
+		} else { // up/down swipes
+			if (velocityY > 0) {
+				myBaby.downSwipe();
+			} else if (velocityY < 0) {
 
-			// Ignore the input, because we don't care about up/down swipes.
+				myBaby.upSwipe();
+			} else {
+				// Do nothing.
+			}
+
 		}
 		return true;
 	}

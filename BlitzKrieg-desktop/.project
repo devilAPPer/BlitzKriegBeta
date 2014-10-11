@@ -16,9 +16,9 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>assets</name>
+			<name>data</name>
 			<type>2</type>
-			<locationURI>copy_PARENT/Blitzkrieg-android/assets</locationURI>
+			<location>C:/Users/Zubin/Documents/GitHub/BlitzKriegBeta/BlitzKrieg-android/assets</location>
 		</link>
 	</linkedResources>
 	<variableList>

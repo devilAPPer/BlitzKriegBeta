@@ -28,7 +28,7 @@ public class Baby {
 		 * if (velocity.y > 200) { velocity.y = 200; } else if(velocity.x > 200)
 		 * { velocity.x = 200; }
 		 */
-		velocity.y += 1 * delta;
+		//velocity.y += 1 * delta;
 		position.add(velocity.cpy().scl(delta));
 
 	}
@@ -36,6 +36,7 @@ public class Baby {
 	public void rightSwipe() {
 		System.out.println("Right");
 		velocity.x += 20;
+		velocity.y=0;
 		// velocity.add(accelerationR.cpy());
 
 	}
@@ -43,9 +44,25 @@ public class Baby {
 	public void leftSwipe() {
 		System.out.println("left");
 		velocity.x -= 20;
+		velocity.y=0;
 		// velocity.add(accelerationL.cpy());
 	}
 
+	public void upSwipe() {
+		System.out.println("up");
+		velocity.y += 20;
+		velocity.x=0;
+		// velocity.add(accelerationR.cpy());
+
+	}
+
+	public void downSwipe() {
+		System.out.println("down");
+		velocity.y -= 20;
+		velocity.x=0;
+		// velocity.add(accelerationL.cpy());
+	}
+	
 	/*
 	 * public void onClick() { velocity.y = -140; }
 	 */
